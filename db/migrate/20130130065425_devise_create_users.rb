@@ -11,7 +11,6 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :state
       t.string :country
       t.string :zipcode
-      t.string :phone
       t.string :encrypted_password, :null => false, :default => ""
       
       ## Recoverable

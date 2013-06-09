@@ -23,7 +23,6 @@ ActiveRecord::Schema.define(:version => 20130130065425) do
     t.string   "state"
     t.string   "country"
     t.string   "zipcode"
-    t.string   "phone"
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
