@@ -12,7 +12,13 @@ Profile::Application.routes.draw do
       put :change_username
       get :edit_username
     end
+    resources :products
   end
     
+  namespace 'public' do
+    resources :blogs
+    resources :profiles, :only => [:show]
+  end
+  
   root :to => 'home#index'
 end

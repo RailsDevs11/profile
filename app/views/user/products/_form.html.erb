@@ -1,0 +1,22 @@
+<div class="control-group">
+  <label class="control-label">Title</label>
+  <div class="controls">
+    <%= f.text_field :title, :placeholder => "Title"%>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label">Description</label>
+  <div class="controls">
+    <%= f.text_area :description, :rows =>'5', :placeholder => "Description"%>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label">Value</label>
+  <div class="controls">
+    <%= f.text_field :value, :rows =>'5', :placeholder => "Value"%>
+  </div>
+</div>
+
+<div class="form-actions">
+  <%= f.submit @product.new_record? ? "Submit" : "Update", :class=>"btn btn-primary offset4" %>
+</div>
