@@ -15,6 +15,6 @@ class Comment < ActiveRecord::Base
   
   #fetch owner of comment
   def is_owner?(user_id)
-    return (self.comment_user === user_id)
+    return (self.user.id === user_id)
   end
 end

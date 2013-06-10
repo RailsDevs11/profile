@@ -36,4 +36,15 @@ class User < ActiveRecord::Base
     "#{self.first_name} #{self.last_name}"
   end
   
+    #Fetch latest 3 post to show on dashboard area
+  #created_at desc will show last created post
+  def recent_products
+    self.products.limit(5).order('created_at DESC')
+  end
+  
+  #Fetch latest 3 comments 
+  def recent_comments
+    self.comments.limit(5).order('created_at DESC')
+  end
+  
 end

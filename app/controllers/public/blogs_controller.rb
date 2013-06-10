@@ -33,9 +33,9 @@ class Public::BlogsController < Public::BaseController
   end
 
   def destroy
-    @product = product.where(:id => params[:product_id]).first
+    @product = Product.where(:id => params[:product_id]).first
     @comment = @product.comments.where(:id => params[:id]).first
-    #@comment.destroy if @comment.is_owner?(current_user.id)
+    @comment.destroy if @comment.is_owner?(current_user.id)
 
     respond_to do |format|
       format.js { 
