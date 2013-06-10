@@ -57,7 +57,7 @@ body {
   padding: 7px 0 8px 0;
   /*background: none repeat scroll 0 0 #242b35;
   background: url("nav_bg.jpg") 0 0 repeat; */
-  background: none repeat scroll 0 0 #365292;
+  background: none repeat scroll 0 0 #25283A;
 }
 .navbar .brand {
     font-size: 26px;
@@ -534,7 +534,7 @@ body {
     padding: 0px 70px;
   }
   .navbar .nav .btn-header {
-    background: none repeat scroll 0 0 #777FFF;
+    background: none repeat scroll 0 0 #333333;
     color: white;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414A57', endColorstr='#292f38',GradientType=0 );
     border: 1px solid #13161b;
