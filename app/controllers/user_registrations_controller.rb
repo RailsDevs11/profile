@@ -11,7 +11,7 @@ class UserRegistrationsController < Devise::RegistrationsController
       sign_in @user, :bypass => true
       redirect_to user_dashboard_index_path
     else
-      render "edit_personal"
+      render "edit"
     end
   end
 

@@ -196,8 +196,8 @@ a:hover {
 /* Content */
 #content {
     background: white;
-    margin-left: 220px;
-    margin-right: 0;
+    margin-left: 100px;
+    margin-right: 100px;
     padding-bottom: 25px;
     position: relative;
     min-height: 500px;
@@ -213,8 +213,8 @@ a:hover {
         background-image: -ms-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
         background-image: -o-linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
         background-image: linear-gradient(top, #FFFFFF 0%, #EEEEEE 100%);
-    border-top-left-radius: 8px;
-    height: 80px;
+
+    height: 65px;
     position: abslute;
     width: 100%;
     margin-top: -38px;
@@ -709,7 +709,7 @@ a:hover {
 }
 
 .widget-content {
-        padding: 12px 15px;
+        padding: 6px 15px;
     border-bottom: 1px solid #cdcdcd;
 }
 .widget-box.widget-plain .widget-content {
