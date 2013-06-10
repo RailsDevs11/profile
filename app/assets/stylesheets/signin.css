@@ -29,6 +29,8 @@
   padding: 25px 0 25px;
   text-align: center;
   width: 100%;
+  background: none repeat scroll 0 0 #365292;
+  color: white;
 }
 #box_login .box .head h4{
   font-weight: bold;

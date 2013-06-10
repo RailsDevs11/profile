@@ -7,11 +7,12 @@
 <div id="user-nav" class="navbar navbar-inverse">
   <ul class="nav btn-group">
     <li class="btn btn-inverse" >
-      <%= link_to '<i class="icon icon-home"></i> <span class="text">Home</span>'.html_safe, root_path %>
+      <%= link_to '<i class="icon icon-home"></i> 
+        <span class="text">Home</span>'.html_safe, root_path %>
     </li>
-
     <li class="btn btn-inverse" >
-      <%= link_to '<i class="icon icon-user"></i> <span class="text">Profile</span>'.html_safe, user_profile_path %>
+      <%= link_to '<i class="icon icon-user"></i> 
+        <span class="text">Profile</span>'.html_safe, user_profile_path %>
     </li>
     <li class="btn btn-inverse">
       <a title="" href="<%= edit_user_registration_path %>">
@@ -20,7 +21,8 @@
       </a>
     </li>
     <li class="btn btn-inverse">
-      <%= link_to '<i class="icon icon-share-alt"></i><span class="text">Logout</span>'.html_safe, destroy_user_session_path, :method => :delete %>
+      <%= link_to '<i class="icon icon-share-alt"></i>
+        <span class="text">Logout</span>'.html_safe, destroy_user_session_path, :method => :delete %>
     </li>
   </ul>
 </div>
@@ -30,15 +32,6 @@
   <ul id="sidebar_nav">
     <li>
       <%= link_to '<i class="icon icon-home"></i><span>Dashboard</span>'.html_safe, user_dashboard_index_path %>
-    </li>
-    <li>
-      <%= link_to '<i class="icon icon-file"></i><span>Create Book</span>'.html_safe, "#" %>
-    </li>
-    <li>
-      <%= link_to '<i class="icon icon-file"></i><span>My Posts</span>'.html_safe, "#" %>
-    </li>
-    <li>
-      <%= link_to '<i class="icon icon-file"></i><span>Public Page</span>'.html_safe, "#" %>
     </li>
     <li>
       <%= link_to '<i class="icon icon-file"></i><span>Delete Account</span>'.html_safe, "#" %>
