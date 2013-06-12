@@ -9,7 +9,7 @@
   <div class="row-fluid no_margin_top">
     <div class="span9 offset1">
       <%= simple_form_for(@product, :url => user_product_path, 
-        :html => { :method => :put, :class=>"form-horizontal" } ) do |f| %>
+        :html => { :method => :put, :class=>"form-horizontal", :multipart => true } ) do |f| %>
         <div class="widget-box">
           <label>
             <div class="widget-title cursor-pointer">

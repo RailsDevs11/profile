@@ -4,6 +4,8 @@ gem 'rails', '3.2.11'
 gem 'pg'
 gem 'devise'
 gem 'simple_form'
+gem 'carrierwave'
+gem 'rmagick'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

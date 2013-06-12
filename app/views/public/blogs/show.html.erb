@@ -6,14 +6,14 @@
           <span class="icon">
             <i class="icon-refresh"></i>
           </span> 
-          <h5>Post</h5>
+          <h5>Product</h5>
           <span class='pull-right'>
             <%= link_to 'Back', public_blogs_path, :class => 'btn btn-inverse' %>
           </span>
         </div>
         <div class="widget-content nopadding updates">
           <div class="new-update clearfix">
-            <i class="icon-ok-sign"></i>
+            <%= image_tag(@product.product_logo, :style => "float: left; margin-right: 20px;")%>
             <span class="update-done">                    
               <a href="<%= public_blog_path(@product) %>" title=""><strong><%= @product.title %></strong></a>
               <span><%= @product.description %></span>
