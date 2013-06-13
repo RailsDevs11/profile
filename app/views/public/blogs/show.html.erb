@@ -19,22 +19,21 @@
               <span><%= @product.description %></span>
             </span>
             <span class="update-date"><span class="update-day"><%= day_format(@product.created_at) %></span><%= month_format(@product.created_at) %></span>
+          </div><br/>
+          COMMENTS :
+          <div id="comments">
+            <%= render :partial => 'comment', :collection => @comments %>
           </div>
-        </div>        
-      </div>
-            
-      COMMENTS :
-      <div id="comments">
-        <%= render :partial => 'comment', :collection => @comments %>
-      </div>
 
-      <%= simple_form_for(@comment, :url => public_blogs_path(:id => @product.id), :remote => true) do |f| %>
-        <%= f.text_area :content, :rows => '3' %>
-        <%= f.submit 'Submit', :class => 'btn btn-primary' %>
-        <span id="loader" style="display: none;">
-          <%= image_tag("/assets/spinner.gif") %>
-        </span>
-      <% end %>
+          <%= simple_form_for(@comment, :url => public_blogs_path(:id => @product.id), :remote => true) do |f| %>
+            <%= f.text_area :content, :rows => '3' %>
+            <%= f.submit 'Submit', :class => 'btn btn-primary' %>
+            <span id="loader" style="display: none;">
+              <%= image_tag("/assets/spinner.gif") %>
+            </span>
+          <% end %>
+        </div>        
+      </div>            
     </div>
   </div>
 </div>
