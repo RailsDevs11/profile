@@ -725,7 +725,7 @@ a:hover {
 .recent-posts li, .recent-comments li, .article-post li, .recent-users li {
     border-bottom: 1px dotted #AEBDC8;
     list-style: none outside none;
-    padding: 10px;
+    padding: 10px 30px;
 }
 .recent-posts li.viewall, .recent-comments li.viewall, .recent-users li.viewall {
         padding: 0;
@@ -741,7 +741,7 @@ a:hover {
 }
 
 .recent-posts li:last-child, .recent-comments li:last-child, .recent-users li:last-child {
-    border-bottom: none !important;
+    #border-bottom: none !important;
 }
 
 .user-thumb {
